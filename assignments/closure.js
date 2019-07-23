@@ -19,6 +19,12 @@ let answer = multadd(num1);
 console.log(answer);
 
 
+// var result = (function () {
+//   var name = "Barry"; 
+//   return name;
+// })(); 
+// result
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 

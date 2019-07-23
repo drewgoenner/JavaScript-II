@@ -79,7 +79,7 @@ console.log(allCaps);
 // runners.map(toCaps);
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.  Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
-let largeShirts = runners.filter(shirts => shirts.shirt_size = "L");
+let largeShirts = runners.filter(shirts => shirts.shirt_size === "L");
 console.log(largeShirts);
 
 // ==== Challenge 4: Use .reduce() ====
@@ -114,10 +114,10 @@ let half1 = runners.filter((arrayItem)=>{
 
  //Problem 2
 
-function info(runners){
+function mailBlast(runners){
     console.log(`${runners.id}, ${runners.email}`)
 }
-runners.forEach(info);
+runners.forEach(mailBlast);
 
 // Problem 3
 //Donors over $200 for a special thank you
