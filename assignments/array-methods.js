@@ -93,7 +93,40 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// Seperate the first and last runners into two seperate arrrays by id number
+let half1 = runners.filter((arrayItem)=>{
+    if(arrayItem.id >= 25){
+        return true;
+    } else {
+        return false;
+    };
+ });
+ console.log(half1);
+ 
+ let half2 = runners.filter((arrayItem)=>{
+    if(arrayItem.id <= 25){
+        return true;
+    } else {
+        return false;
+    };
+ });
+ console.log(half2);
 
-// Problem 2
+ //Problem 2
+
+function info(runners){
+    console.log(`${runners.id}, ${runners.email}`)
+}
+runners.forEach(info);
 
 // Problem 3
+//Donors over $200 for a special thank you
+let hiRoller = runners.filter((arrayItem) =>{
+    if(arrayItem.donation >= 200){
+        return true;
+    } else {
+        return false;
+    };
+})
+console.log(hiRoller);
+

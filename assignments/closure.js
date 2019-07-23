@@ -2,7 +2,8 @@
 // Write a simple closure of your own creation.  Keep it simple!
 
 let num1 = 2
- let num3 = 4
+let num3 = 4
+
 function multadd(num2) {
  let ret = num2 * add(num3);
  return ret;
