@@ -1,6 +1,29 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+let num1 = 2
+let num3 = 4
+
+function multadd(num2) {
+ let ret = num2 * add(num3);
+ return ret;
+
+ function add(num3){
+   let ret2 = num3 + 2;
+   return ret2;
+
+ }
+}
+
+let answer = multadd(num1);
+console.log(answer);
+
+
+// var result = (function () {
+//   var name = "Barry"; 
+//   return name;
+// })(); 
+// result
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
